@@ -2,9 +2,252 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Challenge A4 Tuiter</title>
+    <link href="../../vendors/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+          rel="stylesheet"/>
+    <link href="../../vendors/fontawesome/css/all.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" rel="stylesheet"/>
+    <link href="index.css" rel="stylesheet"/>
 </head>
-<body>
+<body class="bg-black">
+<div class="container">
+    <!--
+    <div>
+        <div class="d-block d-sm-none fa-2x">XS</div>
+        <div class="d-none d-sm-block d-md-none fa-2x">S</div>
+        <div class="d-none d-md-block d-lg-none fa-2x">M</div>
+        <div class="d-none d-lg-block d-xl-none fa-2x">L</div>
+        <div class="d-none d-xl-block d-xxl-none fa-2x">XL</div>
+        <div class="d-none d-xxl-block fa-2x">XXL</div>
+    </div>
+    -->
 
+    <div class="row pt-2">
+        <div class="col-2">
+            <ul class="list-group">
+                <li class="list-group-item bg-black text-white"><i class="fa fa-t fa-2x me-1"></i></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-home me-1"></i><span class="d-none d-xl-inline-block">Home</span></li>
+                <li class="list-group-item bg-black text-white"><b><i class="fa fa-hashtag me-1"></i><span class="d-none d-xl-inline-block">Explore</span></b></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-bell me-1"></i><span class="d-none d-xl-inline-block">Notifications</span></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-envelope me-1"></i><span class="d-none d-xl-inline-block">Messages</span></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-bookmark me-1"></i><span class="d-none d-xl-inline-block">Bookmarks</span></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-list me-1"></i><span class="d-none d-xl-inline-block">Lists</span></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-user me-1"></i><span class="d-none d-xl-inline-block">Profile</span></li>
+                <li class="list-group-item bg-black text-white"><i class="fa fa-chevron-circle-down me-1"></i><span class="d-none d-xl-inline-block">More</span></li>
+            </ul>
+            <button class="btn btn-primary rounded-pill w-100 mt-2">Tuit</button>
+        </div>
+
+
+        <div class="col-10 col-sm-10 col-md-10 col-lg-6 col-xl-6 col-xxl-6">
+            <div class="border-dark">
+                <div class="row ps-2 pe-2">
+                    <div class="col mb-2">
+                        <div class="form-group">
+                            <span class="fa fa-search form-control-feedback text-muted"></span>
+                            <input type="text" class="form-control rounded-pill bg-dark text-muted border-dark" placeholder="Search Tuiter">
+                        </div>
+                    </div>
+                    <div class="col-1 align-self-center me-3">
+                        <i class="fa fa-cog fa-2x text-white"></i>
+                    </div>
+                </div>
+
+                <ul class="nav justify-content-evenly">
+                    <li class="nav-item text-white border-bottom border-primary border-5">
+                        <a class="nav-link active text-white" href="for-you.html">For you</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="trending.html">Trending</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="news.html">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="sports.html">Sports</a>
+                    </li>
+                    <li class="nav-item d-none d-md-inline-block">
+                        <a class="nav-link text-white" href="entertainment.html" tabindex="-1">Entertainment</a>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="card border-dark">
+                <img src="../../tuiter/image/starship_dark.jfif" class="w-100 card-img" alt="Image of spaceX">
+                <div class="card-img-overlay d-flex align-items-end"><h3 class="text-white"><b>SpaceX's Starship</b></h3></div>
+
+            </div>
+
+            <div class="list-group mb-2">
+                <li class="list-group-item bg-black border-dark border-top-0 border-bottom-0">
+                    <div class="row">
+                        <div class="col-10 small">
+                            <div class="text-muted">Web Development</div>
+                            <div class="text-white"><b>ReactJS</b><i class="fa fa-check-circle ms-1"></i><span class="text-muted ms-1">- 2h</span></div>
+                            <div class="text-white"><b>React.js is a component based front-end library that makes it very easy to build Single Page Applications or SPAs</b>
+                            </div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <div class="wd-img-icon-dimensions"><img src="../../tuiter/image/react.png" class="img-fluid wd-image-round"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item bg-black border-dark border-top-0 border-bottom-0">
+                    <div class="row">
+                        <div class="col-10 small">
+                            <div class="text-white"><b>JavaScript</b><i class="fa fa-check-circle ms-1"></i><span class="text-muted ms-1">- 2h</span></div>
+                            <div class="text-white"><b>JavaScript is programming language that can run on browsers as well as desktops</b>
+                            </div>
+                            <div class="text-muted">123K Tuits</div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <div class="wd-img-icon-dimensions"><img src="../../tuiter/image/javascript.png" class="img-fluid wd-image-round"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item bg-black border-dark border-top-0 border-bottom-0">
+                    <div class="row">
+                        <div class="col-10 small">
+                            <div class="text-muted">Web Development</div>
+                            <div class="text-white"><b>jQuery</b><i class="fa fa-check-circle ms-1"></i><span class="text-muted ms-1">- 2h</span></div>
+                            <div class="text-muted">123K Tuits</div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <div class="wd-img-icon-dimensions"><img src="../../tuiter/image/jquery.png" class="img-fluid rounded"></div>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="list-group-item bg-black border-dark border-top-0">
+                    <div class="row">
+                        <div class="col-10 small">
+                            <div class="text-muted">Web Development</div>
+                            <div class="text-white"><b>NodeJS</b><i class="fa fa-check-circle ms-1"></i><span class="text-muted ms-1">- 2h</span></div>
+                            <div class="text-muted">123K Tuits</div>
+                        </div>
+                        <div class="col-2 align-self-center">
+                            <div class="wd-img-icon-dimensions"><img src="../../tuiter/image/node.png" class="img-fluid rounded"></div>
+                        </div>
+                    </div>
+                </li>
+            </div>
+        </div>
+
+
+        <div class="col-4 col-xl-4 d-none d-lg-block">
+            <div class="list-group wd-image-round">
+                <li class="list-group-item bg-dark text-white"><b>Who to follow</b></li>
+
+                <!--<div class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-2 col-xxl-2 float-start">
+                            <img src="../image/java.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "java"/>
+                        </div>
+                        <div class="col-lg-4 col-xl-7 col-xxl-7 small float-start">
+                            <b>Java</b><i class="fa fa-check-circle"></i><br>@Java
+                        </div>
+                        <div class="col-lg-5 col-xl-3 col-xxl-3 align-self-center float-end">
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item">
+                    <div class="row">
+                        <div class="col-lg-3 col-xl-2 col-xxl-2 float-start">
+                            <img src="../image/relativity.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Relativity Space"/>
+                        </div>
+                        <div class="col-lg-4 col-xl-7 col-xxl-7 small float-start d-inline-block">
+                            <b>Relativity Space</b><i class="fa fa-check-circle"></i><br>@relativityspace
+                        </div>
+                        <div class="col-lg-5 col-xl-3 col-xxl-3 align-self-center float-end">
+                            <button class="btn btn-primary rounded-pill">Follow</button>
+                        </div>
+                    </div>
+                </div>-->
+
+                <div class="list-group-item bg-dark text-white">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../tuiter/image/java.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Java"/>
+                        </div>
+                        <div class="col-7 small overflow-visible float-start">
+                            <b>Java</b><i class="fa fa-check-circle ps-1"></i><br><span class="text-muted">@Java</span>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary rounded-pill float-end bg-white text-dark border-white"><b>Follow</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item bg-dark text-white">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../tuiter/image/relativity.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Relativity Space"/>
+                        </div>
+                        <div class="col-7 small overflow-visible float-start">
+                            <b>Relativity Space</b><i class="fa fa-check-circle ps-1"></i><br><span class="text-muted">@relativityspace</span>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary rounded-pill float-end bg-white text-dark border-white"><b>Follow</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item bg-dark text-white">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../tuiter/image/virginGalactic.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Virgin Galactic"/>
+                        </div>
+                        <div class="col-7 small overflow-visible float-start">
+                            <b>Virgin Galactic</b><i class="fa fa-check-circle ps-1"></i><br><span class="text-muted">@virgingalactic</span>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary rounded-pill float-end bg-white text-dark border-white"><b>Follow</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item bg-dark text-white">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../tuiter/image/nasa.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Nasa"/>
+                        </div>
+                        <div class="col-7 small overflow-visible float-start">
+                            <b>NASA</b><i class="fa fa-check-circle ps-1"></i><br><span class="text-muted">@NASA</span>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary rounded-pill float-end bg-white text-dark border-white"><b>Follow</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="list-group-item bg-dark text-white">
+                    <div class="row">
+                        <div class="col-2">
+                            <img src="../../tuiter/image/tesla.png" class = "rounded-pill  float-start wd-img-dp-dimensions" alt = "Tesla"/>
+                        </div>
+                        <div class="col-7 small overflow-visible float-start">
+                            <b>Tesla</b><i class="fa fa-check-circle ps-1"></i><br><span class="text-muted">@Tesla</span>
+                        </div>
+                        <div class="col-3">
+                            <button class="btn btn-primary rounded-pill float-end bg-white text-dark border-white"><b>Follow</b></button>
+                        </div>
+                    </div>
+                </div>
+
+                <!--<li class="list-group-item">
+                    <img src="../image/tesla.png" class = "d-inline-block rounded-pill  float-start wd-img-dp-dimensions me-2" alt = "Tesla"/>
+                    <div class = "d-inline-block small"><b>Tesla</b><i class="fa fa-check-circle ms-1"></i><br>@Tesla</div>
+                    <button class="btn btn-primary rounded-pill d-inline-block float-end mt-1">Follow</button>
+                </li>-->
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>

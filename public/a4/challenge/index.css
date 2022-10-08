@@ -1,0 +1,24 @@
+.wd-img-dp-dimensions {
+    width: 45px;
+    height: 45px;
+}
+.wd-img-icon-dimensions {
+    width: 55px;
+    height: 55px;
+}
+.wd-image-round{
+    border-radius: 10px;
+}
+.form-control {
+    padding-left: 35px;
+}
+
+.form-control-feedback {
+    position: absolute;
+    display: block;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    pointer-events: none;
+}
