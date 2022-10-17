@@ -9,7 +9,7 @@ const PostSummaryItem = (post) => {
                     </div>
                 </div>
                 <div class="col-2 align-self-center">
-                    <div class="wd-img-icon-dimensions"><img src=${post.image} class="img-fluid wd-image-round"></div>
+                    <div class="wd-img-icon-dimensions float-end"><img src=${post.image} class="img-fluid wd-image-round"></div>
                 </div>
             </div>
         </li>

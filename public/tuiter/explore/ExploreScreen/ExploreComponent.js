@@ -33,13 +33,13 @@ const ExploreComponent = () => {
             </ul>
 
             <div class="card mt-2 mb-2">
-                <img src="../image/starship.jfif" class="w-100 card-img" alt="Image of spaceX">
+                <img src="../../image/starship.jfif" class="w-100 card-img" alt="Image of spaceX">
                 <div class="card-img-overlay d-flex align-items-end"><h3 class="text-white"><b>SpaceX's Starship</b></h3></div>
             </div>
             
             <div class="list-group mb-2">
                 ${PostSummaryList()}
-            </div>
+            </div>                        
     `);
 }
 export default ExploreComponent;

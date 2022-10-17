@@ -22,3 +22,8 @@
     text-align: center;
     pointer-events: none;
 }
+
+.wd-custom-border {
+    border-width: thin;
+    border-color: #242424;
+}

@@ -1,13 +1,13 @@
-import NavigationSidebar from "./NavigationSidebar/index.js";
-import WhoToFollowList from "./WhoToFollowList/index.js";
-import ExploreComponent from "./ExploreScreen/ExploreComponent.js";
+import NavigationSidebar from "../NavigationSidebar/index.js";
+import WhoToFollowList from "../WhoToFollowList/index.js";
+import ExploreComponent from "./ExploreComponent.js";
 
 function exploreComponent() {
     $('#wd-explore').append(`
         <div class="row mt-2">
             <div class="col-2 col-md-2 col-lg-1 col-xl-2">
 <!--                <h3>NavigationSidebar</h3>-->
-                ${NavigationSidebar()}
+                ${NavigationSidebar('explore')}
             </div>
             <div class="col-10 col-lg-7 col-xl-6 ps-2 pe-2">
 <!--                <h3>ExploreComponent</h3>-->
