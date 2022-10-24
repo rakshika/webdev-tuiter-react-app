@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import Labs from "./labs/index.js";
 import HelloWorld from "./labs/a6/hello-world";
