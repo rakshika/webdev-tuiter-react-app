@@ -12,7 +12,7 @@ const NavigationSidebar = (
     const active = paths[2];
     return (
         <div className="list-group">
-            <a className="list-group-item"><i className="bi bi-twitter"></i></a>
+            <div href="#" className="list-group-item"><i className="bi bi-twitter"></i></div>
             <Link to="/" className="list-group-item">
                 Labs
             </Link>

@@ -16,7 +16,7 @@ const PostItem = (
         }
     }
 ) => {
-    let text = (post.text != "")?
+    let text = (post.text !== "")?
                <div class="card-body list-group-item">
             <h4 class="card-title small"><b>{post.imageHeading}</b></h4>
             <p class="card-text text-muted small">{post.text}</p>
@@ -25,7 +25,7 @@ const PostItem = (
         <div className="list-group-item">
             <div className="row">
                 <div className="col-sm-2 col-md-1 col-lg-1 col-xl-1 col-xxl-1">
-                    <img width={45} src={`/images/${post.dp}`} className="rounded-pill"/>
+                    <img width={45} src={`/images/${post.dp}`} alt={`${post.userName}`} className="rounded-pill"/>
                 </div>
                 <div className="col-sm-10 col-md-11 col-lg-11 col-xl-11 col-xxl-11 ps-3">
                     <div className="row">
@@ -38,7 +38,7 @@ const PostItem = (
                     </div>
                     <div className="small"><p>{post.title}</p></div>
                     <div className="card mt-2 list-group">
-                        <img src={`/images/${post.image}`}
+                        <img src={`/images/${post.image}`} alt={`${post.userName}`}
                              className="card-img-top list-group-item p-0"/>
                         {text}
                     </div>
