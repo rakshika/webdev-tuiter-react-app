@@ -8,7 +8,8 @@ const NavigationSidebar = (active) => {
                                                                                                  : ''}"><i class="fa fa-home me-1"></i><span
                 class="d-none d-xl-inline-block">Home</span></li></a>
             <a href="../ExploreScreen/index.html"><li class="list-group-item ${active == 'explore'
-                                                                               ? 'active' : ''}"><i class="fa fa-hashtag me-1"></i><span
+                                                                               ? 'active' : ''}"><i class="bi
+                       bi-gear-fill me-1"></i><span
                 class="d-none d-xl-inline-block">Explore</span></li></a>
             <li class="list-group-item"><i class="fa fa-bell me-1"></i><span
                 class="d-none d-xl-inline-block">Notifications</span></li>
