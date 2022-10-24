@@ -1,20 +1,20 @@
 import React from "react";
 const PostItem = (
-    // {
-    //     post = {
-    //         "userName": "Elon Musk",
-    //         "handle": "elonmusk",
-    //         "time": "23h",
-    //         "dp": "rocket.jfif",
-    //         "title": "Amazing show about <a href=\"#\">@Inspiration4x</a> mission!",
-    //         "image": "astronaut.jfif",
-    //         "imageHeading": "Coundown: Inspiration4 Mission to Space | Netflix Official Site",
-    //         "text": "From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space ...<br>&#128279; netflix.com",
-    //         "comment": "4.2K",
-    //         "retweet": "3.5K",
-    //         "likes": "37.5K"
-    //     }
-    // }
+    {
+        post = {
+            "userName": "Elon Musk",
+            "handle": "elonmusk",
+            "time": "23h",
+            "dp": "rocket.jfif",
+            "title": "Amazing show about <a href=\"#\">@Inspiration4x</a> mission!",
+            "image": "astronaut.jfif",
+            "imageHeading": "Coundown: Inspiration4 Mission to Space | Netflix Official Site",
+            "text": "From training to launch to landing, this all-access docuseries rides along with the inspiration4 crew on the first all-civilian orbital space ...<br>&#128279; netflix.com",
+            "comment": "4.2K",
+            "retweet": "3.5K",
+            "likes": "37.5K"
+        }
+    }
 ) => {
     let text = (post.text != "")?
                <div class="card-body list-group-item">
