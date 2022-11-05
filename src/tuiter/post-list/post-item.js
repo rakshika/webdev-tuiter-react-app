@@ -29,8 +29,8 @@ const PostItem = (
                 </div>
                 <div className="col-sm-10 col-md-11 col-lg-11 col-xl-11 col-xxl-11 ps-3">
                     <div className="row">
-                        <div className="col-11 d-inline-block"><b>{post.userName}</b><i
-                            className="fa fa-check-circle ms-1"></i>
+                        <div className="col-11 d-inline-block"><b>{post.userName}</b>
+                            <i className="bi bi-patch-check-fill ms-1 text-primary small"></i>
                             <span
                                 className="text-muted ms-1 small">@{post.handle} - {post.time}</span>
                         </div>
