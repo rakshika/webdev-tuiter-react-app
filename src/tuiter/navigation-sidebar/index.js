@@ -22,7 +22,7 @@ const NavigationSidebar = (
             <Link to="#" className={`list-group-item ${active === 'messages'?'active':''}`}><i className="bi bi-envelope-fill"></i> <span className="d-none d-xl-inline-block"> Messages</span></Link>
             <Link to="#" className={`list-group-item ${active === 'bookmarks'?'active':''}`}><i className="bi bi-bookmark-fill"></i> <span className="d-none d-xl-inline-block"> Bookmarks</span></Link>
             <Link to="#" className={`list-group-item ${active === 'lists'?'active':''}`}><i className="bi bi-list-ul"></i> <span className="d-none d-xl-inline-block"> Lists</span></Link>
-            <Link to="#" className={`list-group-item ${active === 'profile'?'active':''}`}><i className="bi bi-person-fill"></i> <span className="d-none d-xl-inline-block"> Profile</span></Link>
+            <Link to="/tuiter/profile" className={`list-group-item ${active === 'profile'?'active':''}`}><i className="bi bi-person-fill"></i> <span className="d-none d-xl-inline-block"> Profile</span></Link>
             <Link to="#" className={`list-group-item ${active === 'more'?'active':''}`}><i className="bi bi-plus-circle-fill"></i> <span className="d-none d-xl-inline-block"> More</span></Link>
         </div>
     );
