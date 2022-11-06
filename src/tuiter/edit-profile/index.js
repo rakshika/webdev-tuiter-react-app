@@ -88,32 +88,20 @@ const EditProfile = () => {
             </div>
 
 
-            {/*<div className="container">*/}
-            {/*    <center>*/}
-            {/*        <h1>GeeksforGeeks</h1>*/}
-            {/*        <div className="card">*/}
-            {/*            <img className="w-100 mt-1" src={`/images/${profile.bannerPicture}`} alt="landing background"/>*/}
+            <div className="row position-relative d-inline ms-0">
+                <img src={`/images/${profile.bannerPicture}`} className="w-100 px-0 mx-0 border-0" alt="landing background"/>
+                <div className="col text-center card-img-overlay align-middle">
+                    <div className="bg-danger w-100"></div>
+                    <button className="rounded-circle bg-dark m-50 border-0 bg-opacity-75 mx-2"><i className="bi bi-camera text-white"></i></button>
+                    <button className="rounded-circle bg-dark m-50 border-0 bg-opacity-75 mx-2"><i className="bi bi-x-lg text-white"></i></button>
+                </div>
+            </div>
 
-            {/*                <div className="card-img-overlay card-inverse">*/}
-            {/*                    <h4 className="text-stroke text-white pb-5">*/}
-            {/*                        Image Card Overlay*/}
-            {/*                    </h4>*/}
-
-            {/*                    <div className="card-block pt-5">*/}
-            {/*                        <a href="#" className="card-link text-white">Link*/}
-            {/*                        </a>*/}
-
-            {/*                    </div>*/}
-            {/*                </div>*/}
-            {/*        </div>*/}
-            {/*    </center>*/}
-            {/*</div>*/}
-
-            <img className="w-100 mt-1" src={`/images/${profile.bannerPicture}`} alt="landing background"/>
-
-
+            {/*<img className="w-100 mt-1" src={`/images/${profile.bannerPicture}`} alt="landing background"/>*/}
+            
             <div className="row">
-                <div className="col-8"><img className="wd-img-overlap w-25 rounded-pill" src={`/images/${profile.profilePicture}`} alt="profile"/></div>
+                <div className="col-8"><img className="wd-img-overlap w-25 rounded-pill"
+                                            src={`/images/${profile.profilePicture}`} alt="profile"/></div>
             </div>
 
             <form className="form-floating">
