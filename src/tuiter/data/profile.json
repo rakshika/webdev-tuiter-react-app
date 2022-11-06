@@ -1,6 +1,5 @@
 {
-  "firstName": "Rakshika",
-  "lastName": "Raju",
+  "name": "Rakshika Raju",
   "tuits": "1,285 Tuits",
   "handle": "@rakshika",
   "profilePicture": "rakshika.jpg",
@@ -8,7 +7,7 @@
   "bio": "Student, Software Engineer, Travel, Art, and Sustainability. Retuits and likes are not endorsements.",
   "website": "youtube.com/webdevtv",
   "location": "Boston, MA",
-  "dateOfBirth": "May 29 1996",
+  "dateOfBirth": "1996-05-29",
   "dateJoined": "4/2020",
   "followingCount": 340,
   "followersCount": 223
