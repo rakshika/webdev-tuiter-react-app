@@ -98,10 +98,10 @@ const EditProfile = () => {
             </div>
 
             {/*<img className="w-100 mt-1" src={`/images/${profile.bannerPicture}`} alt="landing background"/>*/}
-            
+
             <div className="row">
                 <div className="col-8"><img className="wd-img-overlap w-25 rounded-pill"
-                                            src={`/images/${profile.profilePicture}`} alt="profile"/></div>
+                    src={`/images/${profile.profilePicture}`} alt="profile"/></div>
             </div>
 
             <form className="form-floating">

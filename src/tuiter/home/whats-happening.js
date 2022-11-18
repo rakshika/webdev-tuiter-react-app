@@ -1,5 +1,6 @@
 import React, {useState} from "react";
-import {createTuit} from "../reducers/tuits-reducer";
+// import {createTuit} from "../reducers/tuits-reducer";
+import {createTuitThunk} from "../../services/tuits-thunks";
 import {useDispatch} from "react-redux";
 
 const WhatsHappening = () => {
@@ -11,7 +12,8 @@ const WhatsHappening = () => {
             tuit: whatsHappening
         }
         setWhatsHappening("");  // added this extra so that after adding a new tuit, the content is removed from what's happening
-        dispatch(createTuit(newTuit));
+        // dispatch(createTuit(newTuit));
+        dispatch(createTuitThunk(newTuit));
     }
     return (
         <div className="row">
