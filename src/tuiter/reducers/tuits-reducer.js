@@ -10,16 +10,23 @@ const currentUser = {
     "userName": "NASA",
     "handle": "@nasa",
     "image": "nasa.png",
+    "topic": "Space",
+    "time": "2h",
+    "liked": false,
+    "replies": "0",
+    "retuits": "0",
+    "likes": "0",
 }
 
 const templateTuit = {
     ...currentUser,
+    // currentUser,
     "topic": "Space",
     "time": "2h",
     "liked": false,
-    "replies": 0,
-    "retuits": 0,
-    "likes": 0,
+    "replies": "0",
+    "retuits": "0",
+    "likes": "0",
 }
 
 const tuitsSlice = createSlice({
@@ -48,8 +55,9 @@ const tuitsSlice = createSlice({
        [createTuitThunk.fulfilled]:
            (state, { payload }) => {
                state.loading = false
-               state.tuits.push(payload)
+               state.tuits.push({...currentUser,  ...payload})
            }
+
    },
 
    reducers: {
@@ -61,10 +69,11 @@ const tuitsSlice = createSlice({
        },
        createTuit(state, action) {
            state.unshift({
-                             ...action.payload,
-                             ...templateTuit,
-                             _id: (new Date()).getTime(),
-                         })
+                 ...action.payload,
+                 ...templateTuit,
+                 _id: (new Date()).getTime(),
+             })
+
        }
    }
 });

@@ -6,6 +6,7 @@ import {useDispatch} from "react-redux";
 const WhatsHappening = () => {
     let [whatsHappening, setWhatsHappening] = useState('');
     const dispatch = useDispatch();
+
     const tuitClickHandler = () => {
         // console.log(whatsHappening);
         const newTuit = {
@@ -27,7 +28,7 @@ const WhatsHappening = () => {
        </textarea>
                 <div>
                     <button className="rounded-pill btn btn-primary float-end mt-2 ps-3 pe-3 fw-bold"
-                            onClick={tuitClickHandler}>
+                            onClick={() => tuitClickHandler(whatsHappening)}>
                         Tuit
                     </button>
                     <div className="text-primary fs-2">
