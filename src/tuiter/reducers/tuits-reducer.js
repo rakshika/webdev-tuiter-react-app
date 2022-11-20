@@ -17,10 +17,12 @@ const currentUser = {
     "image": "nasa.png",
     "topic": "Space",
     "time": "2h",
-    "liked": false,
+    "liked": "false",
     "replies": "0",
     "retuits": "0",
     "likes": "0",
+    "dislikes": "0",
+    "disliked": "false"
 }
 
 const templateTuit = {
@@ -28,10 +30,12 @@ const templateTuit = {
     // currentUser,
     "topic": "Space",
     "time": "2h",
-    "liked": false,
+    "liked": "false",
     "replies": "0",
     "retuits": "0",
     "likes": "0",
+    "dislikes": "0",
+    "disliked": "false"
 }
 
 const tuitsSlice = createSlice({

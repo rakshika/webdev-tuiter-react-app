@@ -38,12 +38,12 @@ const TuitStats = (
                 <span> {tuit.likes}</span></div>
 
             <div className="col-2 small text-muted"><i
-                className="bi bi-hand-thumbs-down-fill"
+                className={`bi ${tuit.disliked === 'true' ? 'bi-hand-thumbs-down-fill' : 'bi-hand-thumbs-down'}`}
                 onClick={() => dispatch(updateTuitThunk({
                     ...tuit,
-                    liked: "false",
-                    likes: parseInt(tuit.likes)-1
-                }))}></i></div>
+                    disliked: "true",
+                    dislikes: parseInt(tuit.dislikes)+1,
+                }))}></i><span> {tuit.dislikes}</span></div>
 
             <div className="col-1 small text-muted"><i className="bi bi-upload"></i>
             </div>
