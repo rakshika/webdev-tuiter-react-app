@@ -21,7 +21,6 @@ const TuitStats = (
     }
 ) => {
     const dispatch = useDispatch();
-    let likedClass = tuit.liked?"bi bi-heart-fill text-danger":"bi bi-heart"
     return(
         <div className="row pt-1">
             <div className="col-3 small text-muted"><i

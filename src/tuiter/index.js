@@ -30,7 +30,7 @@ import ProfileComponent from "./profile";
 import {Routes, Route} from "react-router";
 import whoReducer from "./reducers/who-reducer";
 import tuitsReducer from "./reducers/tuits-reducer";
-import profileReducer from "./reducers/profile-reducer";
+// import profileReducer from "./reducers/profile-reducer";
 import {configureStore} from "@reduxjs/toolkit";
 import {Provider} from "react-redux";
 import EditProfile from "./edit-profile";
