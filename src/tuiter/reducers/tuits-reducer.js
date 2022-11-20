@@ -42,18 +42,18 @@ const tuitsSlice = createSlice({
            },
        [deleteTuitThunk.fulfilled]:
            (state, { payload }) => {
-           state.loading = false
+               state.loading = false
                state.tuits = state.tuits.filter(t => t._id !== payload)
            },
        [createTuitThunk.fulfilled]:
            (state, { payload }) => {
-           state.loading = false
+               state.loading = false
                state.tuits.push(payload)
            }
    },
 
    reducers: {
-        deleteTuit(state, action) {
+       deleteTuit(state, action) {
            const index = state
                .findIndex(tuit =>
                               tuit._id === action.payload);
@@ -61,12 +61,12 @@ const tuitsSlice = createSlice({
        },
        createTuit(state, action) {
            state.unshift({
-               ...action.payload,
-               ...templateTuit,
-               _id: (new Date()).getTime(),
-         })
+                             ...action.payload,
+                             ...templateTuit,
+                             _id: (new Date()).getTime(),
+                         })
        }
-    }
+   }
 });
 
 // const tuitsSlice = createSlice({

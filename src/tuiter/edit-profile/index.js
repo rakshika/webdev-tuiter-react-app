@@ -75,14 +75,14 @@ const EditProfile = () => {
         <>
             <div className="row">
                 <div className="col-1 align-self-center"><i className="bi bi-x-lg float-end"
-                    onClick={(event) => {saveProfile()}}></i></div>
+                                                            onClick={(event) => {saveProfile()}}></i></div>
 
                 <div className="col-9">
                     <div className="h6 pt-1">Edit Profile</div>
                 </div>
                 <div className="col-2">
                     <div className="float-end"><button className="btn bg-black text-white small fw-bold rounded-pill me-3 pt-0 pb-1"
-                       onClick={(event) => {updateProfileHandler(event); saveProfile()}}>Save</button></div>
+                                                       onClick={(event) => {updateProfileHandler(event); saveProfile()}}>Save</button></div>
                 </div>
 
             </div>
@@ -101,7 +101,7 @@ const EditProfile = () => {
 
             <div className="row">
                 <div className="col-8"><img className="wd-img-overlap w-25 rounded-pill"
-                    src={`/images/${profile.profilePicture}`} alt="profile"/></div>
+                                            src={`/images/${profile.profilePicture}`} alt="profile"/></div>
             </div>
 
             <form className="form-floating">
