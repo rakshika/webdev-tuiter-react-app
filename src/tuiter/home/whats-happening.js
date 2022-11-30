@@ -11,6 +11,7 @@ const WhatsHappening = () => {
         // console.log(whatsHappening);
         const newTuit = {
             tuit: whatsHappening
+
         }
         setWhatsHappening("");  // added this extra so that after adding a new tuit, the content is removed from what's happening
         // dispatch(createTuit(newTuit));

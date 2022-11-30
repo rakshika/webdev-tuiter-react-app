@@ -16,13 +16,13 @@ const currentUser = {
     "handle": "@nasa",
     "image": "nasa.png",
     "topic": "Space",
-    "time": "2h",
-    "liked": "false",
-    "replies": "0",
-    "retuits": "0",
-    "likes": "0",
-    "dislikes": "0",
-    "disliked": "false"
+    "time": "now",
+    "liked": false,
+    "replies": 0,
+    "retuits": 0,
+    "likes": 0,
+    "dislikes": 0,
+    "disliked": false
 }
 
 const templateTuit = {
